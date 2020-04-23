@@ -7,3 +7,5 @@ Therefore, check your browser version at abouth then download it from here:
 https://chromedriver.chromium.org/downloads
 
 extract the file, take only chromedriver.exe and put it in windows folder. 
+
+then type this to console: pip install selenium 
