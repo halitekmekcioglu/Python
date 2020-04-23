@@ -59,7 +59,7 @@ my_bot = InstaBot('ur mom is gay here',pw="password here")
 my_bot.get_unfollowers()
 
 
-#pip install selenium gerekli
+#pip install selenium necessary
 #selenium==3.141.0
 #urllib3==1.25.7
-#chrome sürümü neyse ona göre chrome web driver i indirip c:/windows un içine exe olarak kopyala. 80 sürümünü kullandık.
+#Use web driver version what your chrome web browser's version is and copy it to this path: c:/windows . In this, we used 80 version.
