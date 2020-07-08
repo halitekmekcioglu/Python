@@ -1,0 +1,21 @@
+-- Table: public.actuals
+
+-- DROP TABLE public.actuals;
+
+CREATE TABLE public.actuals
+(
+  timeslot timestamp without time zone NOT NULL,
+  unit_id integer NOT NULL,
+  actual double precision,
+  CONSTRAINT unit_a_pk PRIMARY KEY (timeslot, unit_id),
+  CONSTRAINT unit_id_fk FOREIGN KEY (unit_id)
+      REFERENCES public.units (unit_id) MATCH SIMPLE
+      ON UPDATE NO ACTION ON DELETE NO ACTION
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.actuals
+  OWNER TO halitdb;
+GRANT ALL ON TABLE public.actuals TO halitdb;
+GRANT SELECT ON TABLE public.actuals TO halitdb_user;
